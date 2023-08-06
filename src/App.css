@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.container {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-1 {
+  height: 18.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-2 {
+  padding-top: 4.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-3 {
+  padding-top: 1.19rem;
+  height: 18.5rem;
+}
+
+.section-4 {
+  padding-top: 4.5rem;
+}
+
+.header-1 {
+  color: #e7e7e7;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0 1.12rem;
+}
+
+.header-2 {
+  color: #c2c2c2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.09375rem;
+  margin: 0 0 1.25rem;
+  padding: 0 1.12rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.63rem;
 }
 
-.App-link {
-  color: #61dafb;
+.number {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.09375rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.number:after {
+  content: "";
+  display: block;
+  width: 1.0625rem;
+  height: 0.25rem;
+  margin-top: 0.12rem;
+  border-radius: 0.15625rem;
+  background: #603ebe;
+}
+
+.image-1 {
+  top: 0.69rem;
+  left: 3.25rem;
+}
+
+.image-2 {
+  top: 1.35rem;
+  left: 0.18rem;
+}
+
+.description-1 {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 1.81rem;
+  padding: 0 1.12rem;
+}
+
+.description-2 {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  padding: 0 1.12rem;
 }
