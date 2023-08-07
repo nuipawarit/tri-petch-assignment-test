@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./App.css";
+import "./App.scss";
 import Carousel from "./components/Carousel";
 import ImageGroup1 from "./components/ImageGroup1";
 import ImageGroup2 from "./components/ImageGroup2";
@@ -54,32 +54,36 @@ function App() {
         <h1 className="header-1">ATHLETS</h1>
         <ImageGroup1 className="image-1" />
       </div>
-      <Carousel
-        name="athlet"
-        items={content.section1.map(({ number, title, description }) => (
-          <div className="section-2">
-            <h3 className="header-2">
-              <span className="number">{number}</span> {title}
-            </h3>
-            <p className="description-1">{description}</p>
-          </div>
-        ))}
-      />
+      <div className="section-2">
+        <Carousel
+          name="athlet"
+          items={content.section1.map(({ number, title, description }) => (
+            <div className="list-item-container">
+              <h3 className="header-2">
+                <span className="number">{number}</span> {title}
+              </h3>
+              <p className="description">{description}</p>
+            </div>
+          ))}
+        />
+      </div>
       <div className="section-3">
         <h1 className="header-1">PLAYERS</h1>
         <ImageGroup2 className="image-2" />
       </div>
-      <Carousel
-        name="player"
-        items={content.section2.map(({ number, title, description }) => (
-          <div className="section-4">
-            <h3 className="header-2">
-              <span className="number">{number}</span> {title}
-            </h3>
-            <p className="description-2">{description}</p>
-          </div>
-        ))}
-      />
+      <div className="section-4">
+        <Carousel
+          name="player"
+          items={content.section2.map(({ number, title, description }) => (
+            <div className="list-item-container">
+              <h3 className="header-2">
+                <span className="number">{number}</span> {title}
+              </h3>
+              <p className="description">{description}</p>
+            </div>
+          ))}
+        />
+      </div>
     </div>
   );
 }

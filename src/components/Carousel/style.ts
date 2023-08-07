@@ -17,6 +17,10 @@ export const Box = styled.div`
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+
+    @media (min-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   .viewport {
@@ -34,10 +38,6 @@ export const Box = styled.div`
     width: 100%;
   }
 
-  //.slide:nth-child(even) {
-  //  background-color: #99f;
-  //}
-
   .snapper {
     position: absolute;
     top: 0;
@@ -53,9 +53,13 @@ export const Box = styled.div`
     width: 100%;
     justify-content: center;
     padding: 0;
-    margin-bottom: 1.88rem;
+    margin-bottom: 1.875rem;
     gap: 0.6875rem;
     vertical-align: top;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 
   .navigation-item {
