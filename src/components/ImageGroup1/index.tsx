@@ -21,4 +21,10 @@ export default styled.div`
       0 1.19rem,
       10.06rem 0;
   }
+
+  @media (min-width: 1440px) {
+    aspect-ratio: 42.375 / 59.375;
+    background-image: url(${footballer});
+    background-position: 0 0;
+  }
 `;
